@@ -1,7 +1,10 @@
 # Function: functionWithRestParams()
 
 ```ts
-function functionWithRestParams(param: string, ...restParams: string[]): boolean;
+function functionWithRestParams(
+   param1: string, 
+   param2: string, ...
+   restParams: string[]): boolean;
 ```
 
 Defined in: [functions.ts:1](http://source-url)
@@ -12,7 +15,8 @@ Function with rest params
 
 | Parameter | Type |
 | :------ | :------ |
-| `param` | `string` |
+| `param1` | `string` |
+| `param2` | `string` |
 | ...`restParams` | `string`[] |
 
 ## Returns

@@ -103,7 +103,11 @@ export function functionWithNamedParams(
 /**
  * Function with rest params
  */
-export function functionWithRestParams(param: string, ...restParams: string[]) {
+export function functionWithRestParams(
+  param1: string,
+  param2: string,
+  ...restParams: string[]
+) {
   return true;
 }
 
