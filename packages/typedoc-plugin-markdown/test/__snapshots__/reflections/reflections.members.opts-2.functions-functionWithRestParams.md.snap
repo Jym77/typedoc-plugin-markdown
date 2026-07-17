@@ -3,8 +3,8 @@
 ```ts
 function functionWithRestParams(
    param1: string, 
-   param2: string, ...
-   restParams: string[]): boolean;
+   param2: string, 
+   ...restParams: string[]): boolean;
 ```
 
 Defined in: [functions.ts:1](http://source-url)
