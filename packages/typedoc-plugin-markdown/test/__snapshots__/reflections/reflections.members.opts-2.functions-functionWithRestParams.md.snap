@@ -6,7 +6,7 @@ function functionWithRestParams(param: string, ...restParams: string[]): boolean
 
 Defined in: [functions.ts:1](http://source-url)
 
-Function with reset parmas
+Function with rest params
 
 ## Parameters
 
