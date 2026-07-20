@@ -1,4 +1,4 @@
-import { italic, strikeThrough } from '@plugin/libs/markdown/index.js';
+import { strikeThrough } from '@plugin/libs/markdown/index.js';
 import { escapeChars } from '@plugin/libs/utils/escape-chars.js';
 import { MarkdownThemeContext } from '@plugin/theme/index.js';
 import { PageTitleTemplatePlaceholders } from '@plugin/types/theme.js';
@@ -39,13 +39,15 @@ export function pageTitle(this: MarkdownThemeContext): string {
     });
   }
 
-  const typeParameters = getTypeParameters(page.model as DeclarationReflection);
-  const typeParametersDisplay = getTypeParametersDisplay(
-    this,
+  const rawTypeParameters = getRawTypeParameters(
     page.model as DeclarationReflection,
   );
+  const typeParametersDisplay = this.helpers.getTypeParameters(
+    (page.model as DeclarationReflection).typeParameters,
+    { includeBackticks: false },
+  );
   const modelName = `${page.model.name}${this.helpers.hasSignatures(page.model as DeclarationReflection) ? '()' : ''}`;
-  const rawName = `${modelName}${typeParameters?.length ? `<${typeParameters}>` : ''}`;
+  const rawName = `${modelName}${rawTypeParameters?.length ? `<${rawTypeParameters}>` : ''}`;
   const name = `${escapeChars(modelName)}${typeParametersDisplay?.length ? `${this.helpers.getAngleBracket('<')}${typeParametersDisplay}${this.helpers.getAngleBracket('>')}` : ''}`;
   const kind = ReflectionKind.singularString(page.model.kind);
   const keyword = getKeyword(page.model as DeclarationReflection);
@@ -132,34 +134,9 @@ function getCodeKeyword(model: DeclarationReflection) {
   return undefined;
 }
 
-function getTypeParameters(model: DeclarationReflection) {
+function getRawTypeParameters(model: DeclarationReflection) {
   return model?.typeParameters
     ?.map((typeParameter) => typeParameter.name)
-    .join(', ');
-}
-
-function getTypeParametersDisplay(
-  context: MarkdownThemeContext,
-  model: DeclarationReflection,
-) {
-  const expandParameters = context.options.getValue('expandParameters');
-  return model?.typeParameters
-    ?.map((typeParameter) => {
-      const nameDescription = [typeParameter.name];
-      if (expandParameters) {
-        if (typeParameter.type) {
-          nameDescription.push(
-            `${italic('extends')} ${context.partials.someType(typeParameter.type)}`,
-          );
-        }
-        if (typeParameter.default) {
-          nameDescription.push(
-            `= ${context.partials.someType(typeParameter.default, { forceCollapse: true })}`,
-          );
-        }
-      }
-      return nameDescription.join(' ');
-    })
     .join(', ');
 }
 

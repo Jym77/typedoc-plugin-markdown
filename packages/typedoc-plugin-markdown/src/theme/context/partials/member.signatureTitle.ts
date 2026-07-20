@@ -1,9 +1,4 @@
-import {
-  backTicks,
-  bold,
-  codeBlock,
-  italic,
-} from '@plugin/libs/markdown/index.js';
+import { bold, codeBlock } from '@plugin/libs/markdown/index.js';
 import { escapeChars } from '@plugin/libs/utils/index.js';
 import { MarkdownThemeContext } from '@plugin/theme/index.js';
 import { ReflectionKind, SignatureReflection } from 'typedoc';
@@ -46,26 +41,8 @@ export function signatureTitle(
   }
 
   if (model.typeParameters) {
-    const expandParameters = this.options.getValue('expandParameters');
     md.push(
-      `${this.helpers.getAngleBracket('<')}${model.typeParameters
-        .map((typeParameter) => {
-          const nameDescription = [backTicks(typeParameter.name)];
-          if (expandParameters) {
-            if (typeParameter.type) {
-              nameDescription.push(
-                `${italic('extends')} ${this.partials.someType(typeParameter.type)}`,
-              );
-            }
-            if (typeParameter.default) {
-              nameDescription.push(
-                `= ${this.partials.someType(typeParameter.default, { forceCollapse: true })}`,
-              );
-            }
-          }
-          return nameDescription.join(' ');
-        })
-        .join(', ')}${this.helpers.getAngleBracket('>')}`,
+      `${this.helpers.getAngleBracket('<')}${this.helpers.getTypeParameters(model.typeParameters)}${this.helpers.getAngleBracket('>')}`,
     );
   }
 
