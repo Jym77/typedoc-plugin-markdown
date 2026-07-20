@@ -297,7 +297,7 @@ export const expandObjects: Partial<DeclarationOption> = {
  * @category Display
  */
 export const expandParameters: Partial<DeclarationOption> = {
-  help: 'Expand parameters and type parameters to display type information.',
+  help: 'Expand parameters and type parameters inside signatures.',
   type: ParameterType.Boolean,
   defaultValue: false,
 };
