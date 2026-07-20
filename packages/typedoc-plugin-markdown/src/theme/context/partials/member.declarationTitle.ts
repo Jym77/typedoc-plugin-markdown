@@ -1,4 +1,9 @@
-import { backTicks, bold, codeBlock } from '@plugin/libs/markdown/index.js';
+import {
+  backTicks,
+  bold,
+  codeBlock,
+  italic,
+} from '@plugin/libs/markdown/index.js';
 import { encodeAngleBrackets, escapeChars } from '@plugin/libs/utils/index.js';
 import { MarkdownThemeContext } from '@plugin/theme/index.js';
 import { DeclarationReflection, ReflectionKind } from 'typedoc';
@@ -90,9 +95,25 @@ function buildDeclarationName(
   );
 
   if (model.typeParameters?.length) {
+    const expandParameters = context.options.getValue('expandParameters');
     nameParts.push(
       `${context.helpers.getAngleBracket('<')}${model.typeParameters
-        .map((typeParameter) => backTicks(typeParameter.name))
+        .map((typeParameter) => {
+          const nameDescription = [backTicks(typeParameter.name)];
+          if (expandParameters) {
+            if (typeParameter.type) {
+              nameDescription.push(
+                `${italic('extends')} ${context.partials.someType(typeParameter.type)}`,
+              );
+            }
+            if (typeParameter.default) {
+              nameDescription.push(
+                `= ${context.partials.someType(typeParameter.default, { forceCollapse: true })}`,
+              );
+            }
+          }
+          return nameDescription.join(' ');
+        })
         .join(', ')}${context.helpers.getAngleBracket('>')}`,
     );
   }
