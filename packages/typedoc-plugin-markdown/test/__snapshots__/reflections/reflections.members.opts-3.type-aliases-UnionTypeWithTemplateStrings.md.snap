@@ -1,6 +1,11 @@
 # Type Alias: UnionTypeWithTemplateStrings
 
-> **UnionTypeWithTemplateStrings** = `` `v${number}` `` \| `` `v${number}.${number}` `` \| `` `v${number}.${number}.${number}` ``
+```ts
+type UnionTypeWithTemplateStrings = 
+  | `v${number}`
+  | `v${number}.${number}`
+  | `v${number}.${number}.${number}`;
+```
 
 Defined in: [types.ts:1](http://source-url)
 

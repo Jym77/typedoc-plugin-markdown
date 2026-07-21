@@ -1,6 +1,8 @@
 # Type Alias: IndexAccessType
 
-> **IndexAccessType** = [`ArrayOfObjectsType`](ArrayOfObjectsType.md)\[`number`\]
+```ts
+type IndexAccessType = ArrayOfObjectsType[number];
+```
 
 Defined in: [types.ts:1](http://source-url)
 

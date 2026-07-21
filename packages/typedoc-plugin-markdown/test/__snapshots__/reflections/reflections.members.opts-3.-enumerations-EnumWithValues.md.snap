@@ -6,16 +6,7 @@ Comments for enum
 
 ## Enumeration Members
 
-### MemberA
-
-> **MemberA**: `"UP"`
-
-Defined in: [enums.ts:1](http://source-url)
-
-***
-
-### MemberB
-
-> **MemberB**: `"DOWN"`
-
-Defined in: [enums.ts:1](http://source-url)
+| Enumeration Member | Value |
+| :------ | :------ |
+| <a id="enumeration-member-membera"></a> `MemberA` | `"UP"` |
+| <a id="enumeration-member-memberb"></a> `MemberB` | `"DOWN"` |

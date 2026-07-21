@@ -1,6 +1,8 @@
 # Type Alias: ReadonlyMappedType\<T\>
 
-> **ReadonlyMappedType**\<`T`\> = `{ readonly [P in keyof T]: T[P] }`
+```ts
+type ReadonlyMappedType<T> = { readonly [P in keyof T]: T[P] };
+```
 
 Defined in: [types.ts:1](http://source-url)
 

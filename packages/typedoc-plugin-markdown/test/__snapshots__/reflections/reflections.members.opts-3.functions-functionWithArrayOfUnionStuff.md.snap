@@ -1,6 +1,8 @@
 # Function: functionWithArrayOfUnionStuff()
 
-> **functionWithArrayOfUnionStuff**(`a`: \[([`Stuff`](../type-aliases/Stuff.md) \| `null`)?\]): `void`
+```ts
+function functionWithArrayOfUnionStuff(a: [(Stuff | null)?]): void;
+```
 
 Defined in: [functions.ts:1](http://source-url)
 

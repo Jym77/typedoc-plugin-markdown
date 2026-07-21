@@ -1,6 +1,21 @@
 # Function: functionReturningUsefulUnionType()
 
-> **functionReturningUsefulUnionType**(): `string` \| `false` \| `true` \| \{ `y`: `string`; `z`: `string`; \} \| \{ `a`: `string`; `b`: `string`; \} \| ((`param`: `boolean`) => `string`) \| ((`param`: `boolean`) => `boolean`)
+```ts
+function functionReturningUsefulUnionType(): 
+  | string
+  | false
+  | true
+  | {
+  y: string;
+  z: string;
+}
+  | {
+  a: string;
+  b: string;
+}
+  | ((param: boolean) => string)
+  | ((param: boolean) => boolean);
+```
 
 Defined in: [functions.ts:1](http://source-url)
 
@@ -24,31 +39,36 @@ Return comments
 
 ### Type Literal
 
-\{ `y`: `string`; `z`: `string`; \}
+```ts
+{
+  y: string;
+  z: string;
+}
+```
 
-#### y
-
-> **y**: `string`
-
-Comments for y
-
-#### z
-
-> **z**: `string`
-
-Comments for z
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `y` | `string` | Comments for y |
+| `z` | `string` | Comments for z |
 
 ***
 
 ### Type Literal
 
-\{ `a`: `string`; `b`: `string`; \}
+```ts
+{
+  a: string;
+  b: string;
+}
+```
 
 ***
 
 ### Function
 
-(`param`: `boolean`) => `string`
+```ts
+(param: boolean) => string
+```
 
 #### Returns
 
@@ -58,4 +78,6 @@ Comments for z
 
 ### Function
 
-(`param`: `boolean`) => `boolean`
+```ts
+(param: boolean) => boolean
+```

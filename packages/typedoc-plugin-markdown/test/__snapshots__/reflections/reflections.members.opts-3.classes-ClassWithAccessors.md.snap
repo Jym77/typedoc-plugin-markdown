@@ -8,7 +8,9 @@ Comments for ClassWithAccessors
 
 ### Constructor
 
-> **new ClassWithAccessors**(): `ClassWithAccessors`
+```ts
+new ClassWithAccessors(): ClassWithAccessors;
+```
 
 #### Returns
 
@@ -16,11 +18,9 @@ Comments for ClassWithAccessors
 
 ## Properties
 
-### privateProp
-
-> `private` **privateProp**: `string`
-
-Defined in: [classes.ts:1](http://source-url)
+| Property | Modifier | Type |
+| :------ | :------ | :------ |
+| <a id="property-privateprop"></a> `privateProp` | `private` | `string` |
 
 ## Accessors
 
@@ -28,7 +28,9 @@ Defined in: [classes.ts:1](http://source-url)
 
 #### Get Signature
 
-> **get** **accessor**(): `string`
+```ts
+get accessor(): string;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 
@@ -40,7 +42,9 @@ Comments for getter
 
 #### Set Signature
 
-> **set** **accessor**(`value`: `string`): `void`
+```ts
+set accessor(value: string): void;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 
@@ -56,7 +60,9 @@ Comments for setter
 
 #### Set Signature
 
-> **set** **noGetter**(`x`: `string`): `void`
+```ts
+set noGetter(x: string): void;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 
@@ -70,7 +76,9 @@ Defined in: [classes.ts:1](http://source-url)
 
 #### Get Signature
 
-> **get** **noSetter**(): `string`
+```ts
+get noSetter(): string;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 

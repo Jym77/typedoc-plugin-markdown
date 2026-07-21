@@ -1,6 +1,20 @@
 # Type Alias: UsefulUnionType
 
-> **UsefulUnionType** = `string` \| `boolean` \| \{ `y`: `string`; `z`: `string`; \} \| \{ `a`: `string`; `b`: `string`; \} \| ((`param`: `boolean`) => `string`) \| ((`param`: `boolean`) => `boolean`)
+```ts
+type UsefulUnionType = 
+  | string
+  | boolean
+  | {
+  y: string;
+  z: string;
+}
+  | {
+  a: string;
+  b: string;
+}
+  | ((param: boolean) => string)
+  | ((param: boolean) => boolean);
+```
 
 Defined in: [types.ts:1](http://source-url)
 
@@ -22,27 +36,30 @@ Comments for boolean
 
 ### Type Literal
 
-\{ `y`: `string`; `z`: `string`; \}
+```ts
+{
+  y: string;
+  z: string;
+}
+```
 
 Comments for object
 
-#### y
-
-> **y**: `string`
-
-Comments for y
-
-#### z
-
-> **z**: `string`
-
-Comments for z
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `y` | `string` | Comments for y |
+| `z` | `string` | Comments for z |
 
 ***
 
 ### Type Literal
 
-\{ `a`: `string`; `b`: `string`; \}
+```ts
+{
+  a: string;
+  b: string;
+}
+```
 
 Comments for object
 
@@ -50,7 +67,9 @@ Comments for object
 
 ### Function
 
-(`param`: `boolean`) => `string`
+```ts
+(param: boolean) => string
+```
 
 Comments for function
 
@@ -58,4 +77,6 @@ Comments for function
 
 ### Function
 
-(`param`: `boolean`) => `boolean`
+```ts
+(param: boolean) => boolean
+```

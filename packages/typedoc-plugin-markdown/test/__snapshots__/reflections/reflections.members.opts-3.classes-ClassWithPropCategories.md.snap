@@ -6,7 +6,9 @@ Defined in: [classes.ts:1](http://source-url)
 
 ### Constructor
 
-> **new ClassWithPropCategories**(`opts`: `object`): `ClassWithPropCategories`
+```ts
+new ClassWithPropCategories(opts: object): ClassWithPropCategories;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 
@@ -18,7 +20,9 @@ Defined in: [classes.ts:1](http://source-url)
 
 ### prop1
 
-> **prop1**: `string`
+```ts
+prop1: string;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 
@@ -26,7 +30,9 @@ Defined in: [classes.ts:1](http://source-url)
 
 ### prop2
 
-> **prop2**: `string`
+```ts
+prop2: string;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 
@@ -34,7 +40,9 @@ Defined in: [classes.ts:1](http://source-url)
 
 ### method1()
 
-> **method1**(): `void`
+```ts
+method1(): void;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 
@@ -46,7 +54,9 @@ Defined in: [classes.ts:1](http://source-url)
 
 ### method2()
 
-> **method2**(): `void`
+```ts
+method2(): void;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 

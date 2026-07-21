@@ -1,6 +1,8 @@
 # Type Alias: ExternalReferenceType
 
-> **ExternalReferenceType** = [`ClassWithTypeParameters`](../classes/ClassWithTypeParameters.md)\<`"x"`, `"y"`\>
+```ts
+type ExternalReferenceType = ClassWithTypeParameters<"x", "y">;
+```
 
 Defined in: [types.ts:1](http://source-url)
 

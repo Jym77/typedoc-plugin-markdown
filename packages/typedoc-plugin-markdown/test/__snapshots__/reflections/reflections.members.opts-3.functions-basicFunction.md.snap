@@ -1,6 +1,8 @@
 # Function: basicFunction()
 
-> **basicFunction**(`someParam`: `number`): `number`
+```ts
+function basicFunction(someParam: number): number;
+```
 
 Defined in: [functions.ts:1](http://source-url)
 

@@ -1,17 +1,14 @@
 # Type Alias: ArrayOfObjectsType
 
-> **ArrayOfObjectsType** = `object`[]
+```ts
+type ArrayOfObjectsType = object[];
+```
 
 Defined in: [types.ts:1](http://source-url)
 
 ## Type Declaration
 
-### age
-
-> **age**: `number`
-
-### name
-
-> **name**: `string`
-
-Comments for name
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `age` | `number` | - |
+| `name` | `string` | Comments for name |

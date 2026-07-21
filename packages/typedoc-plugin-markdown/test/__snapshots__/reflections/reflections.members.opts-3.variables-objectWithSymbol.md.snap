@@ -1,6 +1,8 @@
 # Variable: objectWithSymbol
 
-> `const` **objectWithSymbol**: `object`
+```ts
+const objectWithSymbol: object;
+```
 
 Defined in: [variables.ts:1](http://source-url)
 
@@ -8,8 +10,6 @@ Comments variable with symbol
 
 ## Type Declaration
 
-### \[sym\]
-
-> **\[sym\]**: `string` = `'value'`
-
-Comments for symbol
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| <a id="property-sym"></a> `[sym]` | `string` | `'value'` | Comments for symbol |

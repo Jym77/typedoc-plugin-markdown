@@ -1,6 +1,8 @@
 # Type Alias: TupleType
 
-> **TupleType** = \[`string`, `number`\]
+```ts
+type TupleType = [string, number];
+```
 
 Defined in: [types.ts:1](http://source-url)
 

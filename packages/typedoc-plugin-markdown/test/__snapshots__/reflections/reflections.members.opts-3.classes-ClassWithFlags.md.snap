@@ -8,7 +8,9 @@ Comment for ClassWithFlags
 
 ### Constructor
 
-> **new ClassWithFlags**(): `ClassWithFlags`
+```ts
+new ClassWithFlags(): ClassWithFlags;
+```
 
 #### Returns
 
@@ -16,29 +18,18 @@ Comment for ClassWithFlags
 
 ## Properties
 
-### expermintalProp
-
-> **expermintalProp**: `string`
-
-Defined in: [classes.ts:1](http://source-url)
-
-**`Experimental`**
-
-***
-
-### internalProp
-
-> `private` **internalProp**: `string`
-
-Defined in: [classes.ts:1](http://source-url)
-
-**`Internal`**
+| Property | Modifier | Type | Description |
+| :------ | :------ | :------ | :------ |
+| <a id="property-expermintalprop"></a> `expermintalProp` | `public` | `string` | **`Experimental`** |
+| <a id="property-internalprop"></a> `internalProp` | `private` | `string` | **`Internal`** |
 
 ## Methods
 
 ### expermintalMethod()
 
-> **expermintalMethod**(): `void`
+```ts
+expermintalMethod(): void;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 
@@ -52,7 +43,9 @@ Defined in: [classes.ts:1](http://source-url)
 
 ### internalMethod()
 
-> `protected` **internalMethod**(): `void`
+```ts
+protected internalMethod(): void;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 

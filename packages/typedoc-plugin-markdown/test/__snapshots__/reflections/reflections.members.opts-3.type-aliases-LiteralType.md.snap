@@ -1,6 +1,8 @@
 # Type Alias: LiteralType
 
-> **LiteralType** = `object`
+```ts
+type LiteralType = object;
+```
 
 Defined in: [types.ts:1](http://source-url)
 
@@ -8,71 +10,15 @@ Comments for LiteralType
 
 ## Properties
 
-### someFunctionWithArrow
-
-> **someFunctionWithArrow**: () => `string`
-
-Defined in: [types.ts:1](http://source-url)
-
-Comments for someFunctionWithArrow
-
-#### Returns
-
-`string`
-
-***
-
-### x?
-
-> `optional` **x?**: `string`
-
-Defined in: [types.ts:1](http://source-url)
-
-comment for x
-
-***
-
-### y
-
-> **y**: `object`
-
-Defined in: [types.ts:1](http://source-url)
-
-comment for y
-
-#### x
-
-> **x**: `string`
-
-comment for y.x
-
-#### y?
-
-> `optional` **y?**: `boolean` \| `string`
-
-comment for y.y
-
-#### z
-
-> **z**: (`x`: `string`) => `string`
-
-comment for y.z
-
-##### Returns
-
-`string`
-
-***
-
-### z
-
-> **z**: (`x`: `string`) => `string`
-
-Defined in: [types.ts:1](http://source-url)
-
-#### Returns
-
-`string`
+| Property | Type | Description |
+| :------ | :------ | :------ |
+| <a id="property-somefunctionwitharrow"></a> `someFunctionWithArrow` | () => `string` | Comments for someFunctionWithArrow |
+| <a id="property-x"></a> `x?` | `string` | comment for x |
+| <a id="property-y"></a> `y` | `object` | comment for y |
+| `y.x` | `string` | comment for y.x |
+| `y.y?` | `boolean` \| `string` | comment for y.y |
+| `y.z` | (`x`: `string`) => `string` | comment for y.z |
+| <a id="property-z"></a> `z` | (`x`: `string`) => `string` | - |
 
 ## Accessors
 
@@ -80,7 +26,9 @@ Defined in: [types.ts:1](http://source-url)
 
 #### Get Signature
 
-> **get** **accessorA**(): [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<`string`\>
+```ts
+get accessorA(): Promise<string>;
+```
 
 Defined in: [types.ts:1](http://source-url)
 
@@ -92,7 +40,9 @@ Comments for accessorA getter
 
 #### Set Signature
 
-> **set** **accessorA**(`x`: [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<`string`\>): `void`
+```ts
+set accessorA(x: Promise<string>): void;
+```
 
 Defined in: [types.ts:1](http://source-url)
 
@@ -108,7 +58,9 @@ Comments for accessorA setter
 
 #### Get Signature
 
-> **get** **accessorB**(): `string`
+```ts
+get accessorB(): string;
+```
 
 Defined in: [types.ts:1](http://source-url)
 
@@ -118,7 +70,9 @@ Defined in: [types.ts:1](http://source-url)
 
 #### Set Signature
 
-> **set** **accessorB**(`x`: `string`): `void`
+```ts
+set accessorB(x: string): void;
+```
 
 Defined in: [types.ts:1](http://source-url)
 
@@ -130,7 +84,9 @@ Defined in: [types.ts:1](http://source-url)
 
 ### someFunction()
 
-> **someFunction**(`param`: `string`): [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<`any`\>
+```ts
+someFunction(param: string): Promise<any>;
+```
 
 Defined in: [types.ts:1](http://source-url)
 

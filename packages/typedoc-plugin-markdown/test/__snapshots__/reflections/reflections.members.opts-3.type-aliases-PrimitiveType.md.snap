@@ -1,6 +1,8 @@
 # Type Alias: PrimitiveType
 
-> **PrimitiveType** = `boolean`
+```ts
+type PrimitiveType = boolean;
+```
 
 Defined in: [types.ts:1](http://source-url)
 

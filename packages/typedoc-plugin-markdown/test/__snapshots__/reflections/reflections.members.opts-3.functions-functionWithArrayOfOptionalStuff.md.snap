@@ -1,6 +1,8 @@
 # Function: functionWithArrayOfOptionalStuff()
 
-> **functionWithArrayOfOptionalStuff**(`a`: \[[`Stuff`](../type-aliases/Stuff.md)?\]): `void`
+```ts
+function functionWithArrayOfOptionalStuff(a: [Stuff?]): void;
+```
 
 Defined in: [functions.ts:1](http://source-url)
 

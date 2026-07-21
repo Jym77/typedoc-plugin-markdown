@@ -12,7 +12,9 @@ Comments for DerivedClassA
 
 ### Constructor
 
-> **new DerivedClassA**(): `DerivedClassA`
+```ts
+new DerivedClassA(): DerivedClassA;
+```
 
 #### Returns
 
@@ -24,31 +26,18 @@ Comments for DerivedClassA
 
 ## Properties
 
-### abstractProp
-
-> **abstractProp**: `string` = `'abstractProp'`
-
-Defined in: [classes.ts:1](http://source-url)
-
-Comments for abstractProp
-
-#### Overrides
-
-[`AbstractClass`](AbstractClass.md).[`abstractProp`](AbstractClass.md#abstractprop)
-
-***
-
-### derivedProp
-
-> **derivedProp**: `string`
-
-Defined in: [classes.ts:1](http://source-url)
+| Property | Type | Default value | Description | Overrides |
+| :------ | :------ | :------ | :------ | :------ |
+| <a id="property-abstractprop"></a> `abstractProp` | `string` | `'abstractProp'` | Comments for abstractProp | [`AbstractClass`](AbstractClass.md).[`abstractProp`](AbstractClass.md#property-abstractprop) |
+| <a id="property-derivedprop"></a> `derivedProp` | `string` | `undefined` | - | - |
 
 ## Methods
 
 ### abstractMethod()
 
-> **abstractMethod**(): `string`
+```ts
+abstractMethod(): string;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 
@@ -66,7 +55,9 @@ Comments for abstractMethod
 
 ### derivedMethod()
 
-> **derivedMethod**(): `string`
+```ts
+derivedMethod(): string;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 

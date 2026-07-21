@@ -4,7 +4,9 @@ Main function comment.
 
 ## Call Signature
 
-> **functionWithMultipleSignatures**(`value`: `string`): `string`
+```ts
+function functionWithMultipleSignatures(value: string): string;
+```
 
 Defined in: [functions.ts:1](http://source-url)
 
@@ -16,7 +18,9 @@ This is the first signature of a function with multiple signatures.
 
 ## Call Signature
 
-> **functionWithMultipleSignatures**(`value`: `object`): `string`
+```ts
+function functionWithMultipleSignatures(value: object): string;
+```
 
 Defined in: [functions.ts:1](http://source-url)
 

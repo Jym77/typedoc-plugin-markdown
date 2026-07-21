@@ -1,6 +1,8 @@
 # Type Alias: ArrayType
 
-> **ArrayType** = `string`[]
+```ts
+type ArrayType = string[];
+```
 
 Defined in: [types.ts:1](http://source-url)
 

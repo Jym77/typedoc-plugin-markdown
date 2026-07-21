@@ -8,7 +8,9 @@ Comments for ClassWithModifiers
 
 ### Constructor
 
-> **new ClassWithModifiers**(): `ClassWithModifiers`
+```ts
+new ClassWithModifiers(): ClassWithModifiers;
+```
 
 #### Returns
 
@@ -16,59 +18,21 @@ Comments for ClassWithModifiers
 
 ## Properties
 
-### privateProp
-
-> `private` **privateProp**: `string`
-
-Defined in: [classes.ts:1](http://source-url)
-
-Comments for privateProp
-
-***
-
-### protectedProp
-
-> `protected` **protectedProp**: `string`
-
-Defined in: [classes.ts:1](http://source-url)
-
-Comments for protectedProp
-
-***
-
-### publicPropWithDefault
-
-> **publicPropWithDefault**: `string` = `'propWithDefault'`
-
-Defined in: [classes.ts:1](http://source-url)
-
-Comments for propWithDefault
-
-***
-
-### readonlyProp
-
-> `readonly` **readonlyProp**: `string`
-
-Defined in: [classes.ts:1](http://source-url)
-
-Comments for abstractProperty
-
-***
-
-### staticProp
-
-> `static` **staticProp**: `string`
-
-Defined in: [classes.ts:1](http://source-url)
-
-Comments for staticProp
+| Property | Modifier | Type | Default value | Description |
+| :------ | :------ | :------ | :------ | :------ |
+| <a id="property-privateprop"></a> `privateProp` | `private` | `string` | `undefined` | Comments for privateProp |
+| <a id="property-protectedprop"></a> `protectedProp` | `protected` | `string` | `undefined` | Comments for protectedProp |
+| <a id="property-publicpropwithdefault"></a> `publicPropWithDefault` | `public` | `string` | `'propWithDefault'` | Comments for propWithDefault |
+| <a id="property-readonlyprop"></a> `readonlyProp` | `readonly` | `string` | `undefined` | Comments for abstractProperty |
+| <a id="property-staticprop"></a> `staticProp` | `static` | `string` | `undefined` | Comments for staticProp |
 
 ## Methods
 
 ### privateMethod()
 
-> `private` **privateMethod**(): `void`
+```ts
+private privateMethod(): void;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 
@@ -82,7 +46,9 @@ Comment for privateMethod
 
 ### publicMethod()
 
-> **publicMethod**(): `void`
+```ts
+publicMethod(): void;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 
@@ -96,7 +62,9 @@ Comment for publicMethod
 
 ### staticMethod()
 
-> `static` **staticMethod**(): `void`
+```ts
+static staticMethod(): void;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 

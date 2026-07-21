@@ -4,36 +4,13 @@ Defined in: [interfaces.ts:1](http://source-url)
 
 ## Properties
 
-### someProp?
-
-> `optional` **someProp?**: `boolean`
-
-Defined in: [interfaces.ts:1](http://source-url)
-
-Description for prop someProp
+| Property | Type | Description |
+| :------ | :------ | :------ |
+| <a id="property-someprop"></a> `someProp?` | `boolean` | Description for prop someProp |
 
 ## Events
 
-### anotherEvent
-
-> **anotherEvent**: `MouseEvent`
-
-Defined in: [interfaces.ts:1](http://source-url)
-
-***
-
-### ~~someEvent?~~
-
-> `optional` **someEvent?**: (`eventParam`: [`CustomEventInterface`](CustomEventInterface.md)\<`MouseEvent`\>) => `void`
-
-Defined in: [interfaces.ts:1](http://source-url)
-
-Description for event someEvent
-
-#### Deprecated
-
-Deprectaed comments
-
-#### Returns
-
-`void`
+| Event | Type | Description |
+| :------ | :------ | :------ |
+| <a id="property-anotherevent"></a> `anotherEvent` | `MouseEvent` | - |
+| <a id="property-someevent"></a> ~~`someEvent?`~~ | (`eventParam`: [`CustomEventInterface`](CustomEventInterface.md)\<`MouseEvent`\>) => `void` | Description for event someEvent **Deprecated** Deprectaed comments |

@@ -8,7 +8,9 @@ Comments for BasicClass
 
 ### Constructor
 
-> **new BasicClass**(): `BasicClass`
+```ts
+new BasicClass(): BasicClass;
+```
 
 #### Returns
 
@@ -16,29 +18,18 @@ Comments for BasicClass
 
 ## Properties
 
-### prop
-
-> **prop**: `string`
-
-Defined in: [classes.ts:1](http://source-url)
-
-Comments for prop
-
-***
-
-### Prop
-
-> **Prop**: `string`
-
-Defined in: [classes.ts:1](http://source-url)
-
-Comments for Prop
+| Property | Type | Description |
+| :------ | :------ | :------ |
+| <a id="property-prop"></a> `prop` | `string` | Comments for prop |
+| <a id="property-prop-1"></a> `Prop` | `string` | Comments for Prop |
 
 ## Methods
 
 ### method()
 
-> **method**(): `string`
+```ts
+method(): string;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 

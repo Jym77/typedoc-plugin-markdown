@@ -6,7 +6,9 @@ Defined in: [classes.ts:1](http://source-url)
 
 ### Constructor
 
-> **new ClassWithoutPropCategories**(`opts`: `object`): `ClassWithoutPropCategories`
+```ts
+new ClassWithoutPropCategories(opts: object): ClassWithoutPropCategories;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 
@@ -16,25 +18,18 @@ Defined in: [classes.ts:1](http://source-url)
 
 ## Properties
 
-### prop1
-
-> **prop1**: `string`
-
-Defined in: [classes.ts:1](http://source-url)
-
-***
-
-### prop2
-
-> **prop2**: `string`
-
-Defined in: [classes.ts:1](http://source-url)
+| Property | Type |
+| :------ | :------ |
+| <a id="property-prop1"></a> `prop1` | `string` |
+| <a id="property-prop2"></a> `prop2` | `string` |
 
 ## Methods
 
 ### method1()
 
-> **method1**(): `void`
+```ts
+method1(): void;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 
@@ -46,7 +41,9 @@ Defined in: [classes.ts:1](http://source-url)
 
 ### method2()
 
-> **method2**(): `void`
+```ts
+method2(): void;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 

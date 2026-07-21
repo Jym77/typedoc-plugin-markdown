@@ -10,7 +10,9 @@ parent block tag
 
 ## Call Signature
 
-> **InterfaceWithFunctionOverloads**(`options?`: `any`): [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<`void`\>
+```ts
+InterfaceWithFunctionOverloads(options?: any): Promise<void>;
+```
 
 Defined in: [interfaces.ts:1](http://source-url)
 
@@ -26,7 +28,9 @@ function1 block tag
 
 ## Call Signature
 
-> **InterfaceWithFunctionOverloads**(`options2?`: `any`): [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<`void`\>
+```ts
+InterfaceWithFunctionOverloads(options2?: any): Promise<void>;
+```
 
 Defined in: [interfaces.ts:1](http://source-url)
 

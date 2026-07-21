@@ -8,7 +8,9 @@ Comments for ClassWithConstructorOverloads
 
 ### Constructor
 
-> **new ClassWithConstructorOverloads**(`x`: `number`, `y`: `string`): `ClassWithConstructorOverloads`
+```ts
+new ClassWithConstructorOverloads(x: number, y: string): ClassWithConstructorOverloads;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 
@@ -18,7 +20,9 @@ Defined in: [classes.ts:1](http://source-url)
 
 ### Constructor
 
-> **new ClassWithConstructorOverloads**(`x`: `string`): `ClassWithConstructorOverloads`
+```ts
+new ClassWithConstructorOverloads(x: string): ClassWithConstructorOverloads;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 
@@ -28,7 +32,9 @@ Defined in: [classes.ts:1](http://source-url)
 
 ### Constructor
 
-> **new ClassWithConstructorOverloads**(`s`: `string`): `ClassWithConstructorOverloads`
+```ts
+new ClassWithConstructorOverloads(s: string): ClassWithConstructorOverloads;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 

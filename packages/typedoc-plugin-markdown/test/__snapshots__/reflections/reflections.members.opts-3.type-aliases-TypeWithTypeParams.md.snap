@@ -1,6 +1,8 @@
 # Type Alias: TypeWithTypeParams\<T, R\>
 
-> **TypeWithTypeParams**\<`T`, `R`\> = \[`T`, `R`\]
+```ts
+type TypeWithTypeParams<T, R> = [T, R];
+```
 
 Defined in: [types.ts:1](http://source-url)
 

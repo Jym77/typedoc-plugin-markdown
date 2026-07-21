@@ -4,20 +4,20 @@ Defined in: [interfaces.ts:1](http://source-url)
 
 ## Indexable
 
-> \[`key`: `string`\]: `string`
+```ts
+[key: string]: string
+```
 
 First index signature
 
-> \[`index`: `number`\]: `string`
+```ts
+[index: number]: string
+```
 
 Second index signature
 
 ## Properties
 
-### prop
-
-> **prop**: `string`
-
-Defined in: [interfaces.ts:1](http://source-url)
-
-Prop
+| Property | Type | Description |
+| :------ | :------ | :------ |
+| <a id="property-prop"></a> `prop` | `string` | Prop |

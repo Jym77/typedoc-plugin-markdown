@@ -1,6 +1,8 @@
 # Function: functionReturningAnObject()
 
-> **functionReturningAnObject**(): `object`
+```ts
+function functionReturningAnObject(): object;
+```
 
 Defined in: [functions.ts:1](http://source-url)
 
@@ -12,10 +14,7 @@ Comments for function
 
 Return comments
 
-### x
-
-> **x**: `number` = `1`
-
-### y
-
-> **y**: `number` = `2`
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `x` | `number` | `1` |
+| `y` | `number` | `2` |

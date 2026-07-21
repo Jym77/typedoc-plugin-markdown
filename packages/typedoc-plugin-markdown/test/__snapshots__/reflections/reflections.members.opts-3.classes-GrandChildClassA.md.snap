@@ -10,7 +10,9 @@ Defined in: [classes.ts:1](http://source-url)
 
 ### Constructor
 
-> **new GrandChildClassA**(): `GrandChildClassA`
+```ts
+new GrandChildClassA(): GrandChildClassA;
+```
 
 #### Returns
 

@@ -6,10 +6,6 @@ Comments for InterfaceWithTypeParameters
 
 ## Properties
 
-### prop
-
-> **prop**: `A`
-
-Defined in: [interfaces.ts:1](http://source-url)
-
-Comments for prop
+| Property | Type | Description |
+| :------ | :------ | :------ |
+| <a id="property-prop"></a> `prop` | `A` | Comments for prop |

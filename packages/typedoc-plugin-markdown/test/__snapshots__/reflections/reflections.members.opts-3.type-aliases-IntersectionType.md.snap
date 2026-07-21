@@ -1,6 +1,8 @@
 # Type Alias: IntersectionType
 
-> **IntersectionType** = [`TupleType`](TupleType.md) & [`ArrayType`](ArrayType.md) & `object`
+```ts
+type IntersectionType = TupleType & ArrayType & object;
+```
 
 Defined in: [types.ts:1](http://source-url)
 
@@ -8,6 +10,6 @@ Comments for IntersectionType
 
 ## Type Declaration
 
-### bar
-
-> **bar**: `number`
+| Name | Type |
+| :------ | :------ |
+| `bar` | `number` |

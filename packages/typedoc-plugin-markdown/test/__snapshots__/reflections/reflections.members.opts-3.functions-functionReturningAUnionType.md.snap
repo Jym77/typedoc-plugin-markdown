@@ -1,6 +1,8 @@
 # Function: functionReturningAUnionType()
 
-> **functionReturningAUnionType**(): `string` \| `boolean`
+```ts
+function functionReturningAUnionType(): string | boolean;
+```
 
 Defined in: [functions.ts:1](http://source-url)
 

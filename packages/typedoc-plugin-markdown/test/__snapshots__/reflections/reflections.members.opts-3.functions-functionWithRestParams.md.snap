@@ -1,6 +1,8 @@
 # Function: functionWithRestParams()
 
-> **functionWithRestParams**(`param`: `string`, ...`restParams`: `string`[]): `boolean`
+```ts
+function functionWithRestParams(param: string, ...restParams: string[]): boolean;
+```
 
 Defined in: [functions.ts:1](http://source-url)
 

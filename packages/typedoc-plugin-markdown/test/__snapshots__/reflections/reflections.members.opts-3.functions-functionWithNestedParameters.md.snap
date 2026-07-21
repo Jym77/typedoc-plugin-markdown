@@ -1,6 +1,11 @@
 # Function: functionWithNestedParameters()
 
-> **functionWithNestedParameters**(`params`: `object`, `context`: `any`, `somethingElse?`: `string`): `boolean`
+```ts
+function functionWithNestedParameters(
+   params: object, 
+   context: any, 
+   somethingElse?: string): boolean;
+```
 
 Defined in: [functions.ts:1](http://source-url)
 

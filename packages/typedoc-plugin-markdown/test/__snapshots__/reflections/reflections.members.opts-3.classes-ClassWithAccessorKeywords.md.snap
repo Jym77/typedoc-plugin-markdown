@@ -6,7 +6,9 @@ Defined in: [classes.ts:1](http://source-url)
 
 ### Constructor
 
-> **new ClassWithAccessorKeywords**(): `ClassWithAccessorKeywords`
+```ts
+new ClassWithAccessorKeywords(): ClassWithAccessorKeywords;
+```
 
 #### Returns
 

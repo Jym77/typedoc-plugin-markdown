@@ -11,7 +11,9 @@ Defined in: [classes.ts:1](http://source-url)
 
 ### Constructor
 
-> **new AbstractClass**(): `AbstractClass`
+```ts
+new AbstractClass(): AbstractClass;
+```
 
 #### Returns
 
@@ -19,19 +21,17 @@ Defined in: [classes.ts:1](http://source-url)
 
 ## Properties
 
-### abstractProp
-
-> `abstract` **abstractProp**: `string`
-
-Defined in: [classes.ts:1](http://source-url)
-
-Comments for abstractProp
+| Property | Modifier | Type | Description |
+| :------ | :------ | :------ | :------ |
+| <a id="property-abstractprop"></a> `abstractProp` | `abstract` | `string` | Comments for abstractProp |
 
 ## Methods
 
 ### abstractMethod()
 
-> `abstract` **abstractMethod**(): `string`
+```ts
+abstract abstractMethod(): string;
+```
 
 Defined in: [classes.ts:1](http://source-url)
 
