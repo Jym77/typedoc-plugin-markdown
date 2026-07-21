@@ -39,10 +39,16 @@ export function pageTitle(this: MarkdownThemeContext): string {
     });
   }
 
-  const typeParameters = getTypeParameters(page.model as DeclarationReflection);
+  const rawTypeParameters = getRawTypeParameters(
+    page.model as DeclarationReflection,
+  );
+  const typeParametersDisplay = this.helpers.getTypeParameters(
+    (page.model as DeclarationReflection).typeParameters,
+    { includeBackticks: false },
+  );
   const modelName = `${page.model.name}${this.helpers.hasSignatures(page.model as DeclarationReflection) ? '()' : ''}`;
-  const rawName = `${modelName}${typeParameters?.length ? `<${typeParameters}>` : ''}`;
-  const name = `${escapeChars(modelName)}${typeParameters?.length ? `${this.helpers.getAngleBracket('<')}${typeParameters}${this.helpers.getAngleBracket('>')}` : ''}`;
+  const rawName = `${modelName}${rawTypeParameters?.length ? `<${rawTypeParameters}>` : ''}`;
+  const name = `${escapeChars(modelName)}${typeParametersDisplay?.length ? `${this.helpers.getAngleBracket('<')}${typeParametersDisplay}${this.helpers.getAngleBracket('>')}` : ''}`;
   const kind = ReflectionKind.singularString(page.model.kind);
   const keyword = getKeyword(page.model as DeclarationReflection);
   const codeKeyword = getCodeKeyword(page.model as DeclarationReflection);
@@ -128,7 +134,7 @@ function getCodeKeyword(model: DeclarationReflection) {
   return undefined;
 }
 
-function getTypeParameters(model: DeclarationReflection) {
+function getRawTypeParameters(model: DeclarationReflection) {
   return model?.typeParameters
     ?.map((typeParameter) => typeParameter.name)
     .join(', ');
