@@ -21,9 +21,23 @@ const commonOptions = {
   expandObjects: false,
 };
 
+// Because `parametersFormat: 'none'` mostly makes sense when `expandParameters`
+// is set, this is adapted from reflections-2 (that has `expandParameters`)
+// rather than from reflections-1 (that doesn't).
 const opts3 = {
   parametersFormat: 'none',
+  classPropertiesFormat: 'table',
+  interfacePropertiesFormat: 'table',
+  typeDeclarationFormat: 'table',
+  enumMembersFormat: 'table',
+  propertyMembersFormat: 'table',
+  typeAliasPropertiesFormat: 'table',
+  indexFormat: 'table',
+  useCodeBlocks: true,
   expandParameters: true,
+  navigationModel: {
+    excludeGroups: true,
+  },
 };
 
 /** @type {import('typedoc').TypeDocOptions} */
