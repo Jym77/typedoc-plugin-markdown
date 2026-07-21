@@ -1,0 +1,15 @@
+# Function: basicFunction()
+
+> **basicFunction**(`someParam`: `number`): `number`
+
+Defined in: [functions.ts:1](http://source-url)
+
+This is a function that is assigned to a variable.
+
+## See
+
+http://abc.com
+
+## Returns
+
+`number`

@@ -1,0 +1,11 @@
+# Function: functionWithArrayOfOptionalStuff()
+
+> **functionWithArrayOfOptionalStuff**(`a`: \[[`Stuff`](../type-aliases/Stuff.md)?\]): `void`
+
+Defined in: [functions.ts:1](http://source-url)
+
+Comments for array of stuff?
+
+## Returns
+
+`void`

@@ -1,0 +1,29 @@
+# Interface: InterfaceWithComments\<A, B, C, D\>
+
+Defined in: [interfaces.ts:1](http://source-url)
+
+Comments for interface
+over two lines
+
+And some more comments
+
+## Properties
+
+### ~~propertyWithComments~~
+
+> **propertyWithComments**: `string`
+
+Defined in: [interfaces.ts:1](http://source-url)
+
+Some text.
+
+- list item
+- list item
+
+#### Deprecated
+
+This is a deprecated property
+
+#### See
+
+https://example.com

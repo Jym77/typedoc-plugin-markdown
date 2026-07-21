@@ -1,0 +1,15 @@
+# Function: functionReturningAUsefulFunction()
+
+> **functionReturningAUsefulFunction**(): \<`T`\>(`x`: `string`) => `boolean`
+
+Defined in: [functions.ts:1](http://source-url)
+
+Comments for function
+
+## Returns
+
+> \<`T`\>(`x`: `string`): `boolean`
+
+### Returns
+
+`boolean`

@@ -1,0 +1,29 @@
+# Function: curriedFunction()
+
+Comments for main curriedFunction
+
+## Call Signature
+
+> **curriedFunction**(`searchElement`: `unknown`): \<`Value`\>(`iterable`: `Iterable`\<`Value`\>) => `boolean`
+
+Defined in: [functions.ts:1](http://source-url)
+
+Comments for current function 1
+
+### Returns
+
+> \<`Value`\>(`iterable`: `Iterable`\<`Value`\>): `boolean`
+
+#### Returns
+
+`boolean`
+
+## Call Signature
+
+> **curriedFunction**\<`Value`\>(`searchElement`: `unknown`, `iterable`: `Iterable`\<`Value`\>): `string`
+
+Defined in: [functions.ts:1](http://source-url)
+
+### Returns
+
+`string`

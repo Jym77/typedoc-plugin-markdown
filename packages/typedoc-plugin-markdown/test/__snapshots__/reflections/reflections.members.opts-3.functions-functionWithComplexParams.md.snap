@@ -1,0 +1,11 @@
+# Function: functionWithComplexParams()
+
+> **functionWithComplexParams**(`paramA`: (`a`: `string`) => `true`, `paramB`: `object`): `boolean`
+
+Defined in: [functions.ts:1](http://source-url)
+
+Function with function parmas
+
+## Returns
+
+`boolean`

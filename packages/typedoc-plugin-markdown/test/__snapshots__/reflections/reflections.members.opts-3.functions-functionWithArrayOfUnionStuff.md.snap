@@ -1,0 +1,11 @@
+# Function: functionWithArrayOfUnionStuff()
+
+> **functionWithArrayOfUnionStuff**(`a`: \[([`Stuff`](../type-aliases/Stuff.md) \| `null`)?\]): `void`
+
+Defined in: [functions.ts:1](http://source-url)
+
+Comments for array of union stuff
+
+## Returns
+
+`void`

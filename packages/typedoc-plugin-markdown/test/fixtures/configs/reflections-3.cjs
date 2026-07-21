@@ -2,33 +2,28 @@
 
 const baseOptions = require('../typedoc.cjs');
 
+/** @type {import('typedoc').TypeDocOptions & import('../../../dist/index.js').PluginOptions} */
 const commonOptions = {
   entryPoints: ['../src/reflections/index.ts'],
-  plugin: ['../../../dist/index.js'],
+  plugin: [
+    '../../../dist/index.js',
+    '../custom-plugins/normalize-sources.mjs',
+    '../custom-plugins/navigation-plugin.mjs',
+  ],
   hidePageHeader: true,
   hideBreadcrumbs: true,
-  disableSources: true,
-  expandObjects: true,
-  expandParameters: true,
   tableColumnSettings: {
+    hideSources: true,
     leftAlignHeaders: true,
   },
-  router: 'member',
+  excludePrivate: false,
   blockTagsPreserveOrder: ['@deprecated', '@see'],
-};
-
-const opts1 = {};
-
-const opts2 = {
-  parametersFormat: 'table',
-  classPropertiesFormat: 'table',
-  interfacePropertiesFormat: 'table',
-  typeDeclarationVisibility: 'compact',
-  useCodeBlocks: true,
+  expandObjects: false,
 };
 
 const opts3 = {
   parametersFormat: 'none',
+  expandParameters: true,
 };
 
 /** @type {import('typedoc').TypeDocOptions} */
@@ -38,22 +33,16 @@ module.exports = {
   outputs: [
     {
       name: 'markdown',
-      path: '../out/md/objectsAndParams/members/opts-1',
+      path: '../out/md/reflections/members/opts-3',
       options: {
-        ...opts1,
+        ...opts3,
       },
     },
     {
       name: 'markdown',
-      path: '../out/md/objectsAndParams/members/opts-2',
+      path: '../out/md/reflections/modules/opts-3',
       options: {
-        ...opts2,
-      },
-    },
-    {
-      name: 'markdown',
-      path: '../out/md/objectsAndParams/members/opts-3',
-      options: {
+        router: 'module',
         ...opts3,
       },
     },

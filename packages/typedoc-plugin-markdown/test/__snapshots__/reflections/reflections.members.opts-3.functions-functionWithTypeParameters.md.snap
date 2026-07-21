@@ -1,0 +1,11 @@
+# Function: functionWithTypeParameters()
+
+> **functionWithTypeParameters**\<`T`, `Item`\>(): `boolean`
+
+Defined in: [functions.ts:1](http://source-url)
+
+Function with type parameters
+
+## Returns
+
+`boolean`
