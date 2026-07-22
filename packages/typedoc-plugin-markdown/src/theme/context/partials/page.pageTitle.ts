@@ -43,7 +43,7 @@ export function pageTitle(this: MarkdownThemeContext): string {
     (page.model as DeclarationReflection).typeParameters,
     { includeBackticks: this.options.getValue('expandParameters') ?? false },
   );
-  const rawTypeParameters = unEscapeChars(typeParameters ?? "");
+  const rawTypeParameters = unEscapeChars(typeParameters ?? '');
 
   const modelName = `${page.model.name}${this.helpers.hasSignatures(page.model as DeclarationReflection) ? '()' : ''}`;
   const rawName = `${modelName}${rawTypeParameters?.length ? `<${rawTypeParameters}>` : ''}`;
