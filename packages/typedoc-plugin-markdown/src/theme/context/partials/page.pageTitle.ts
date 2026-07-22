@@ -40,8 +40,9 @@ export function pageTitle(this: MarkdownThemeContext): string {
   }
 
   const typeParameters = this.helpers.getTypeParameters(
-      (page.model as DeclarationReflection).typeParameters,
-    );
+    (page.model as DeclarationReflection).typeParameters,
+    { includeBackticks: this.options.getValue('expandParameters') ?? false },
+  );
   const rawTypeParameters = unEscapeChars(typeParameters ?? "");
 
   const modelName = `${page.model.name}${this.helpers.hasSignatures(page.model as DeclarationReflection) ? '()' : ''}`;

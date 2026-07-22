@@ -1,4 +1,4 @@
-# Type Alias: TypeWithTypeParams\<`T`, `R`\>
+# Type Alias: TypeWithTypeParams\<T, R\>
 
 > **TypeWithTypeParams**\<`T`, `R`\> = \[`T`, `R`\]
 
