@@ -6,8 +6,10 @@ export function getTypeParameters(
   this: MarkdownThemeContext,
   typeParameters?: TypeParameterReflection[],
 ): string | undefined {
+  if (!typeParameters?.length) return undefined;
+
   return typeParameters
-    ?.map((typeParameter) => {
+    .map((typeParameter) => {
       const nameDescription = [backTicks(typeParameter.name)];
 
       if (this.options.getValue('expandParameters')) {
