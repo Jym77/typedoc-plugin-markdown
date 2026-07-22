@@ -1,5 +1,5 @@
 import { strikeThrough } from '@plugin/libs/markdown/index.js';
-import { escapeChars } from '@plugin/libs/utils/escape-chars.js';
+import { escapeChars, unEscapeChars } from '@plugin/libs/utils/index.js';
 import { MarkdownThemeContext } from '@plugin/theme/index.js';
 import { PageTitleTemplatePlaceholders } from '@plugin/types/theme.js';
 import {
@@ -42,9 +42,10 @@ export function pageTitle(this: MarkdownThemeContext): string {
   const rawTypeParameters = getRawTypeParameters(
     page.model as DeclarationReflection,
   );
-  const typeParametersDisplay = this.helpers.getTypeParameters(
-    (page.model as DeclarationReflection).typeParameters,
-    { includeBackticks: false },
+  const typeParametersDisplay = unEscapeChars(
+    this.helpers.getTypeParameters(
+      (page.model as DeclarationReflection).typeParameters,
+    ) ?? '',
   );
   const modelName = `${page.model.name}${this.helpers.hasSignatures(page.model as DeclarationReflection) ? '()' : ''}`;
   const rawName = `${modelName}${rawTypeParameters?.length ? `<${rawTypeParameters}>` : ''}`;
