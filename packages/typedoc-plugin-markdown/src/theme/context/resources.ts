@@ -343,8 +343,9 @@ export const resourceHelpers = (context: MarkdownThemeContext) => {
       helpers.getReturnType.apply(context, [model]) as string,
     getTypeParameters: (
       typeParameters?: TypeParameterReflection[] | undefined,
+      options?: { includeBackticks?: boolean | undefined } | undefined,
     ) =>
-      helpers.getTypeParameters.apply(context, [typeParameters]) as
+      helpers.getTypeParameters.apply(context, [typeParameters, options]) as
         | string
         | undefined,
     hasSignatures: (model: DeclarationReflection) =>

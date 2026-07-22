@@ -1,4 +1,4 @@
-# Type Alias: TypeWithTypeParams\<`T`, `R`\>
+# Type Alias: TypeWithTypeParams\<T, R\>
 
 ```ts
 type TypeWithTypeParams<T, R> = [T, R];

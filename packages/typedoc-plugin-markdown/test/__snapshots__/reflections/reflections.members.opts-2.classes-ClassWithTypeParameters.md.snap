@@ -1,4 +1,4 @@
-# Class: ClassWithTypeParameters\<`A`, `B` *extends* `string`, `C` = `boolean`\>
+# Class: ClassWithTypeParameters\<A, B *extends* `string`, C = `boolean`\>
 
 Defined in: [classes.ts:1](http://source-url)
 

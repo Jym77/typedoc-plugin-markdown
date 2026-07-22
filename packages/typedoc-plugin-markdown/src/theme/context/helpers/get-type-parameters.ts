@@ -5,12 +5,16 @@ import { TypeParameterReflection } from 'typedoc';
 export function getTypeParameters(
   this: MarkdownThemeContext,
   typeParameters?: TypeParameterReflection[],
+  options?: { includeBackticks?: boolean },
 ): string | undefined {
   if (!typeParameters?.length) return undefined;
+  const includeBackticks = options?.includeBackticks ?? true;
 
   return typeParameters
     .map((typeParameter) => {
-      const nameDescription = [backTicks(typeParameter.name)];
+      const nameDescription = [
+        includeBackticks ? backTicks(typeParameter.name) : typeParameter.name,
+      ];
 
       if (this.options.getValue('expandParameters')) {
         if (typeParameter.type) {
