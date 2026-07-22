@@ -6,13 +6,11 @@ export function getTypeParameters(
   this: MarkdownThemeContext,
   typeParameters?: TypeParameterReflection[],
 ): string | undefined {
-  const expandParameters = this.options.getValue('expandParameters');
-
   return typeParameters
     ?.map((typeParameter) => {
       const nameDescription = [backTicks(typeParameter.name)];
 
-      if (expandParameters) {
+      if (this.options.getValue('expandParameters')) {
         if (typeParameter.type) {
           nameDescription.push(
             `${italic('extends')} ${this.partials.someType(typeParameter.type)}`,
